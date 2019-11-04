@@ -34,7 +34,8 @@ namespace WorkerServiceSignalR
                     builder =>
                     {
                         builder.WithOrigins("https://localhost:5001",
-                                "http://localhost:5000")
+                                "http://localhost:5000",
+                                "http://127.0.0.1:5500", "http://127.0.0.1:5501")
                             .AllowAnyHeader()
                             .AllowAnyMethod()
                             .AllowCredentials();
